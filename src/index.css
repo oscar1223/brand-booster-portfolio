@@ -109,7 +109,7 @@ All colors MUST be HSL.
   }
 
   body {
-    background: linear-gradient(180deg, hsl(var(--primary)) 0%, white 100%);
+    background: linear-gradient(135deg, white 0%, hsl(var(--primary)) 100%);
     color: hsl(var(--foreground));
     min-height: 100vh;
   }
