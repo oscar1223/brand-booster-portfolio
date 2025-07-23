@@ -174,7 +174,7 @@ const PhoneCallSection = () => {
                 <CardContent className="pt-6">
                   <div className="flex items-center gap-3 mb-3">
                     <Sparkles className="w-5 h-5 text-primary" />
-                    <h4 className="font-semibold">Asistente María AI</h4>
+                    <h4 className="font-semibold">Asistente Óscar AI</h4>
                   </div>
                   <p className="text-sm text-muted-foreground mb-4">
                     Mi asistente de IA está entrenada para entender tus necesidades específicas 

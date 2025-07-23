@@ -24,7 +24,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
-            Soy María, coach transformacional especializada en acompañar a profesionales y empresarios hacia una vida más auténtica y exitosa. Después de horas, transformo organizaciones.
+            Soy Óscar, especialista en implementación de inteligencia artificial para empresas que buscan aumentar sus ingresos y optimizar sus procesos de manera innovadora.
           </p>
         </div>
 
@@ -33,11 +33,11 @@ const HeroSection = () => {
           <div className="flex items-center space-x-3 bg-muted/30 rounded-full pr-4 md:pr-6 pl-2 py-2 hover:bg-muted/50 transition-colors cursor-pointer"
                onClick={() => scrollToSection('mi-historia')}>
             <div className="w-8 md:w-10 h-8 md:h-10 bg-gradient-to-r from-primary to-primary/70 rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-semibold text-xs md:text-sm">M</span>
+              <span className="text-primary-foreground font-semibold text-xs md:text-sm">Ó</span>
             </div>
             <div className="text-left">
               <div className="text-xs md:text-sm font-medium">Sobre mí</div>
-              <div className="text-xs text-muted-foreground">María Coach</div>
+              <div className="text-xs text-muted-foreground">Óscar IA</div>
             </div>
           </div>
         </div>

@@ -122,10 +122,10 @@ const ConversationSection = () => {
         <div className="text-center mt-12">
           <div className="inline-block p-6 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-xl border border-primary/20 max-w-lg">
             <p className="text-muted-foreground italic">
-              "Cada proyecto es una oportunidad de crear algo extraordinario. 
-              <span className="text-foreground font-medium">Estoy emocionada de conocer tu historia</span>."
+              "Cada proyecto es una oportunidad de revolucionar tu negocio con IA. 
+              <span className="text-foreground font-medium">Estoy emocionado de conocer tu empresa</span>."
             </p>
-            <p className="text-sm text-primary font-medium mt-2">— María</p>
+            <p className="text-sm text-primary font-medium mt-2">— Óscar</p>
           </div>
         </div>
       </div>
