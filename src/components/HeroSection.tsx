@@ -14,8 +14,9 @@ const HeroSection = () => {
         </div>
 
         {/* Main headline */}
-        <div className="space-y-6">
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
+        <div className="space-y-6 relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 blur-3xl"></div>
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight relative">
             Construyendo puentes entre el{" "}
             <span className="text-muted-foreground">potencial</span> y el{" "}
             <span className="text-primary">éxito</span>

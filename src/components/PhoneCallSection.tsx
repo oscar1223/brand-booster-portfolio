@@ -10,8 +10,7 @@ import { useToast } from "@/hooks/use-toast";
 const PhoneCallSection = () => {
   const [phoneData, setPhoneData] = useState({
     name: '',
-    phone: '',
-    preferredTime: 'morning'
+    phone: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -29,7 +28,7 @@ const PhoneCallSection = () => {
         description: `Mi asistente de IA te llamará al ${phoneData.phone} en los próximos 5 minutos para agendar tu cita.`,
       });
       
-      setPhoneData({ name: '', phone: '', preferredTime: 'morning' });
+      setPhoneData({ name: '', phone: '' });
     } catch (error) {
       toast({
         title: "Error",
@@ -123,21 +122,6 @@ const PhoneCallSection = () => {
                     />
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="preferredTime">Horario preferido</Label>
-                    <select
-                      id="preferredTime"
-                      name="preferredTime"
-                      value={phoneData.preferredTime}
-                      onChange={handleChange}
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    >
-                      <option value="morning">Mañana (9:00 - 12:00)</option>
-                      <option value="afternoon">Tarde (14:00 - 18:00)</option>
-                      <option value="evening">Noche (19:00 - 21:00)</option>
-                      <option value="flexible">Flexible</option>
-                    </select>
-                  </div>
 
                   <Button 
                     type="submit" 
