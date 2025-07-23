@@ -5,7 +5,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="inicio" className="min-h-screen flex items-center justify-center pt-8 md:pt-20 px-4">
+    <section id="inicio" className="min-h-screen flex items-center justify-center pt-4 md:pt-20 px-4">
       <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
         {/* Recent project badge */}
         <div className="inline-flex items-center space-x-2 bg-muted/50 rounded-full px-3 md:px-4 py-2 text-xs md:text-sm text-muted-foreground">
