@@ -6,76 +6,76 @@ const ResultsSection = () => {
   const achievements = [
     {
       icon: TrendingUp,
-      title: "Incremento de ventas",
-      value: "+250%",
-      description: "Aumento promedio en conversiones de mis clientes",
+      title: "Marcas transformadas",
+      value: "50+",
+      description: "Empresas que han redefinido su identidad",
       color: "text-primary"
     },
     {
       icon: Users,
-      title: "Usuarios impactados",
-      value: "50K+",
-      description: "Personas que han interactuado con mis proyectos",
+      title: "Audiencias conectadas",
+      value: "2M+",
+      description: "Personas impactadas por mis diseños",
       color: "text-secondary-foreground"
     },
     {
       icon: Star,
-      title: "Satisfacción del cliente",
-      value: "4.9/5",
-      description: "Rating promedio en proyectos completados",
+      title: "Proyectos exitosos",
+      value: "95%",
+      description: "Superan objetivos iniciales",
       color: "text-accent-foreground"
     },
     {
-      icon: Zap,
-      title: "Tiempo de carga",
-      value: "0.8s",
-      description: "Velocidad promedio de sitios optimizados",
+      icon: Target,
+      title: "Años de experiencia",
+      value: "8+",
+      description: "Creando experiencias memorables",
       color: "text-primary"
     }
   ];
 
   const highlights = [
     {
-      title: "Transformación Digital Completa",
-      client: "Startup Tech",
-      result: "De 0 a 10K usuarios en 6 meses",
-      impact: "Incremento del 400% en leads cualificados",
-      tags: ["UX/UI", "Frontend", "Optimización"]
+      title: "Rebranding que cambió todo",
+      client: "Eco Startup",
+      result: "Inversión de €500K tras el rebrand",
+      impact: "Posicionamiento como líder en sostenibilidad",
+      tags: ["Branding", "Strategy", "Storytelling"],
+      story: "Una startup verde que no sabía cómo comunicar su misión. Creamos una identidad que habla por sí sola."
     },
     {
-      title: "E-commerce de Alto Rendimiento",
-      client: "Retail Brand",
-      result: "Reducción del 60% en tiempo de carga",
-      impact: "Aumento del 180% en conversiones móviles",
-      tags: ["Performance", "Mobile-First", "SEO"]
+      title: "E-commerce que emociona",
+      client: "Fashion Brand",
+      result: "300% más conversiones en 3 meses",
+      impact: "Experiencia de compra memorable",
+      tags: ["UX/UI", "E-commerce", "Mobile"],
+      story: "Transformamos una tienda online aburrida en una experiencia que conecta emocionalmente."
     },
     {
-      title: "Plataforma SaaS Innovadora",
-      client: "Fintech Emergente",
-      result: "MVP en 8 semanas",
-      impact: "Captación de $2M en ronda inicial",
-      tags: ["React", "API Design", "Escalabilidad"]
+      title: "App que simplifica vidas",
+      client: "FinTech",
+      result: "100K usuarios en el primer mes",
+      impact: "4.8★ en App Store desde el lanzamiento",
+      tags: ["Product Design", "Mobile App", "UX"],
+      story: "Hicimos que las finanzas sean tan simples como enviar un mensaje. La gente ama la simplicidad."
     }
   ];
 
   return (
-    <section id="resultados" className="py-20 bg-accent/20">
+    <section id="casos" className="py-20 bg-accent/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-primary/20 text-primary">
-            Resultados que hablan
+          <Badge variant="outline" className="mb-4">
+            Casos de éxito
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Impacto{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              real
-            </span>{" "}
-            y medible
+            Historias que{" "}
+            <span className="text-primary">transformaron</span>{" "}
+            negocios
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            No me conformo con entregar código. Me enfoco en generar 
-            <span className="text-primary font-medium"> resultados tangibles</span> que 
-            impulsen el crecimiento de tu negocio.
+            Cada proyecto es único, pero todos comparten algo: 
+            <span className="text-foreground font-medium">el poder de una buena historia bien contada</span>.
           </p>
         </div>
 
@@ -109,10 +109,10 @@ const ResultsSection = () => {
           </h3>
           <div className="grid lg:grid-cols-3 gap-8">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-elegant transition-all duration-300 group border-l-4 border-l-primary">
-                <CardHeader className="bg-gradient-to-r from-primary/5 to-transparent">
+              <Card key={index} className="overflow-hidden hover:shadow-elegant transition-all duration-300 group">
+                <CardHeader>
                   <div className="flex items-center justify-between mb-2">
-                    <Badge variant="secondary" className="text-xs font-medium">
+                    <Badge variant="outline" className="text-xs font-medium">
                       {highlight.client}
                     </Badge>
                     <Award className="w-5 h-5 text-primary" />
@@ -122,19 +122,22 @@ const ResultsSection = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <div className="space-y-3">
+                  <p className="text-sm text-muted-foreground italic leading-relaxed">
+                    "{highlight.story}"
+                  </p>
+                  <div className="space-y-3 pt-2">
                     <div className="flex items-center space-x-2">
                       <Target className="w-4 h-4 text-primary" />
                       <span className="text-sm font-medium text-foreground">{highlight.result}</span>
                     </div>
                     <div className="flex items-center space-x-2">
-                      <TrendingUp className="w-4 h-4 text-secondary-foreground" />
+                      <TrendingUp className="w-4 h-4 text-primary" />
                       <span className="text-sm text-muted-foreground">{highlight.impact}</span>
                     </div>
                   </div>
                   <div className="flex flex-wrap gap-2 pt-2">
                     {highlight.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="outline" className="text-xs border-primary/20">
+                      <Badge key={tagIndex} variant="outline" className="text-xs">
                         {tag}
                       </Badge>
                     ))}
@@ -145,19 +148,17 @@ const ResultsSection = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
+        {/* Philosophy */}
         <div className="text-center mt-16">
-          <div className="inline-block p-8 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl border border-primary/20">
+          <div className="inline-block p-8 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl border border-primary/20 max-w-2xl">
             <h3 className="text-2xl font-bold mb-4">
-              ¿Listo para obtener resultados similares?
+              Mi filosofía
             </h3>
-            <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-              Cada proyecto es una oportunidad de superar expectativas y generar impacto real.
+            <p className="text-muted-foreground leading-relaxed">
+              Creo que cada marca tiene una historia única que merece ser contada de forma extraordinaria. 
+              <span className="text-foreground font-medium">No se trata de seguir tendencias, sino de crear experiencias auténticas</span> que 
+              conecten, emocionen y generen resultados duraderos.
             </p>
-            <div className="flex items-center justify-center space-x-2 text-primary font-medium">
-              <Zap className="w-5 h-5" />
-              <span>Hablemos de tu próximo éxito</span>
-            </div>
           </div>
         </div>
       </div>

@@ -28,41 +28,42 @@ const HeroSection = () => {
               </div>
               
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                Hago que las{" "}
+                Soy{" "}
                 <span className="bg-gradient-primary bg-clip-text text-transparent relative">
-                  ideas
-                  <div className="absolute -bottom-2 left-0 w-full h-4 bg-gradient-secondary/30 -z-10 transform rotate-1"></div>
-                </span>{" "}
-                cobren vida
+                  María
+                  <div className="absolute -bottom-2 left-0 w-full h-4 bg-primary/20 -z-10 transform rotate-1"></div>
+                </span>
+                <br />
+                y convierto problemas en{" "}
+                <span className="text-primary">soluciones</span>
               </h1>
               
-              <h2 className="text-xl md:text-2xl text-muted-foreground font-medium">
-                Creativo Digital & Estratega de Resultados
+              <h2 className="text-xl md:text-2xl text-muted-foreground font-light">
+                Designer • Strategist • Problem Solver
               </h2>
             </div>
 
             <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-              No solo creo páginas web bonitas. Desarrollo experiencias que 
-              <span className="text-primary font-medium"> generan impacto real</span> y 
-              <span className="text-primary font-medium"> resultados medibles</span> para tu negocio.
+              Durante 8 años he ayudado a marcas a conectar con sus audiencias a través del diseño estratégico. 
+              <span className="text-foreground font-medium">Cada proyecto cuenta una historia</span>.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
-                onClick={() => scrollToSection('resultados')}
-                className="bg-gradient-primary text-white border-0 shadow-glow hover:shadow-colorful transition-all duration-300 hover:scale-105"
+                onClick={() => scrollToSection('mi-historia')}
+                className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
               >
-                Ver mis resultados ✨
+                Conoce mi historia
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button 
                 variant="outline" 
                 size="lg"
-                onClick={() => scrollToSection('contacto')}
-                className="border-primary/20 hover:bg-primary/5 transition-all duration-300"
+                onClick={() => scrollToSection('conversemos')}
+                className="border-primary hover:bg-primary/5 transition-all duration-300"
               >
-                Charlemos
+                Conversemos
               </Button>
             </div>
 

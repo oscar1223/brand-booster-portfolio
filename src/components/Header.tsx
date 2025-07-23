@@ -18,8 +18,8 @@ const Header = () => {
           <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center shadow-glow">
             <Sparkles className="w-4 h-4 text-white" />
           </div>
-          <span className="font-bold text-lg bg-gradient-primary bg-clip-text text-transparent">
-            CreativeStudio
+          <span className="font-bold text-lg">
+            María
           </span>
         </div>
         
@@ -32,23 +32,29 @@ const Header = () => {
             Inicio
           </button>
           <button 
-            onClick={() => scrollToSection('sobre-mi')}
+            onClick={() => scrollToSection('mi-historia')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Sobre Mí
+            Mi historia
           </button>
           <button 
-            onClick={() => scrollToSection('resultados')}
+            onClick={() => scrollToSection('proceso')}
+            className="text-foreground hover:text-primary transition-colors"
+          >
+            Proceso
+          </button>
+          <button 
+            onClick={() => scrollToSection('casos')}
             className="text-foreground hover:text-primary transition-all duration-300 relative group"
           >
-            Resultados
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
+            Casos
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
           </button>
           <button 
-            onClick={() => scrollToSection('proyectos')}
+            onClick={() => scrollToSection('conversemos')}
             className="text-foreground hover:text-primary transition-colors"
           >
-            Proyectos
+            Conversemos
           </button>
           <button 
             onClick={() => scrollToSection('contacto')}
@@ -60,10 +66,10 @@ const Header = () => {
 
         <div className="hidden md:flex items-center space-x-4">
           <Button 
-            className="bg-gradient-primary text-white border-0 shadow-glow hover:shadow-colorful transition-all duration-300 hover:scale-105"
-            onClick={() => scrollToSection('contacto')}
+            className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
+            onClick={() => scrollToSection('conversemos')}
           >
-            Trabajemos juntos ✨
+            Hablemos
           </Button>
         </div>
 
@@ -87,22 +93,28 @@ const Header = () => {
               Inicio
             </button>
             <button 
-              onClick={() => scrollToSection('sobre-mi')}
+              onClick={() => scrollToSection('mi-historia')}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
-              Sobre Mí
+              Mi historia
             </button>
             <button 
-              onClick={() => scrollToSection('resultados')}
+              onClick={() => scrollToSection('proceso')}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
-              Resultados
+              Proceso
             </button>
             <button 
-              onClick={() => scrollToSection('proyectos')}
+              onClick={() => scrollToSection('casos')}
               className="text-left text-foreground hover:text-primary transition-colors"
             >
-              Proyectos
+              Casos
+            </button>
+            <button 
+              onClick={() => scrollToSection('conversemos')}
+              className="text-left text-foreground hover:text-primary transition-colors"
+            >
+              Conversemos
             </button>
             <button 
               onClick={() => scrollToSection('contacto')}
