@@ -20,11 +20,13 @@ export default {
 		extend: {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
 				'gradient-hero': 'var(--gradient-hero)',
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
 				'glow': 'var(--shadow-glow)',
+				'colorful': 'var(--shadow-colorful)',
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',

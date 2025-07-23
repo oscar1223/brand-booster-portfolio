@@ -65,18 +65,22 @@ const ProjectsSection = () => {
   const otherProjects = projects.filter(project => !project.featured);
 
   return (
-    <section id="proyectos" className="py-20 bg-accent/30">
+    <section id="proyectos" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4">
-            Proyectos
+          <Badge variant="outline" className="mb-4 border-primary/20 text-primary">
+            Portfolio Creativo
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Mis trabajos destacados
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Proyectos que{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              marcan diferencia
+            </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Una selección de los proyectos más importantes que he desarrollado, 
-            cada uno con sus propios desafíos y soluciones innovadoras.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Cada proyecto es una historia de transformación digital. 
+            Descubre cómo convertimos desafíos en{" "}
+            <span className="text-primary font-medium">experiencias excepcionales</span>.
           </p>
         </div>
 
