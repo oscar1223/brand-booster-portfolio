@@ -88,16 +88,6 @@ const ProcessSection = () => {
           })}
         </div>
 
-        {/* Collaboration note */}
-        <div className="mt-16 text-center">
-          <div className="inline-block p-6 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-xl border border-primary/20">
-            <p className="text-lg text-muted-foreground">
-              <span className="text-foreground font-medium">Colaboración constante</span> • 
-              Transparencia total • 
-              <span className="text-foreground font-medium">Comunicación clara</span>
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );
