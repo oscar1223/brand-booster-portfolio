@@ -44,9 +44,9 @@ const StorySection = () => {
 
           {/* Chapter 2 */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <Card className="bg-gradient-to-br from-secondary/5 to-secondary/10 border-secondary/20 md:order-1">
+            <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 md:order-1">
               <CardContent className="p-8 text-center">
-                <Lightbulb className="w-12 h-12 text-secondary mx-auto mb-4" />
+                <Lightbulb className="w-12 h-12 text-primary mx-auto mb-4" />
                 <p className="text-sm text-muted-foreground italic">
                   "Cada proyecto es una oportunidad de crear algo memorable."
                 </p>
@@ -54,7 +54,7 @@ const StorySection = () => {
             </Card>
             <div className="space-y-6">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white text-sm font-bold">
+                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold">
                   2
                 </div>
                 <h3 className="text-2xl font-bold">La experimentación</h3>
