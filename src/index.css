@@ -122,10 +122,10 @@ All colors MUST be HSL.
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, hsl(var(--primary)) 0%, transparent 70%);
-    opacity: 0.1;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, hsl(var(--primary)) 0%, transparent 60%);
+    opacity: 0.15;
     pointer-events: none;
     z-index: -1;
   }
